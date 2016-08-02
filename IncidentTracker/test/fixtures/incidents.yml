@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  location: MyString
+  status: 
+  severity: 
+  date: 2016-02-04
+  time: 2016-02-04 15:55:03
+  comments: MyText
+
+two:
+  description: MyText
+  location: MyString
+  status: 
+  severity: 
+  date: 2016-02-04
+  time: 2016-02-04 15:55:03
+  comments: MyText

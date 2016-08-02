@@ -1,0 +1,40 @@
+<div class="timeline">
+  <p class="show_incidents" style="display:none">More incidents have recently been added. <a href="#">Show Incidents</a></p>
+  <p id="notice"><%= notice %></p>
+  <table id="datatable" class="timeline__table responsive no-wrap">
+    <thead class="table__head">
+      <tr class="table__fields table__row">
+        <th>User</th>
+        <th>Media</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Status</th>
+        <th>Severity</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @incidents.reverse.each do |incident| %>
+        <tr role="row" class="table__row" data-href="incidents/<%= incident.id %>">
+          <td>
+            <%= User.find(incident.user_id).first_name %>
+            <%= User.find(incident.user_id).last_name %>
+          </td>
+          <td><img src="<%= incident.media.thumb.url %>"/></td>
+          <td><%= incident.description %></td>
+          <td><%= incident.location %></td>
+          <td>Open</td>
+          <td><%= incident.severity %></td>
+          <td><%= incident.date %></td>
+          <td><%= (incident.time).to_s(:time) %></td>
+          <td>
+            <%= link_to 'Show', incident_path(incident) %><br>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

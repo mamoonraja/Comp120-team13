@@ -1,0 +1,11 @@
+/* Does everything application.css would have done.
+*= require dataTables/extras/dataTables.responsive
+*/
+
+@import "universal";
+@import "home";
+@import "incidents";
+@import "navigation";
+@import "scaffolds";
+@import "users";
+@import "timeline";

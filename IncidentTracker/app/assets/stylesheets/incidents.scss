@@ -1,0 +1,68 @@
+// Place all the styles related to the Incidents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.incident-new {
+  margin: 20px auto 0px auto;
+  width: 75%;
+}
+
+.description__area {
+  background-color: $primary;
+  border: 2px solid $dark;
+  color: $text;
+  font-size: 14px;
+  height: 265px;
+  margin-top: 10px;
+  outline: none;
+  width: 500px;
+  &:focus {
+    border-color: $secondary;
+  }
+}
+
+.container__one {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.container__two {
+  display: inline-block;
+  margin-left: 130px;
+  vertical-align: top;
+}
+
+.incident__field {
+  margin: 30px 20px 0 0;
+}
+
+.category {
+  display: inline-block;
+}
+
+.severity {
+  display: inline-block;
+}
+
+.column_two {
+  display: inline-block;
+  float: right;
+}
+
+.incident__info {
+  font-family: "HelveticaNeue";
+  font-size: 14px;
+  color: $text;
+  margin-bottom: 20px;
+}
+
+.info__text {
+  font-family: "HelveticaNeue";
+  font-size: 14px;
+  color: $text;
+  margin-top: 15px;
+}
+
+.info__label {
+  color: $secondary;
+}

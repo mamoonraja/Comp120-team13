@@ -1,0 +1,82 @@
+/************
+* Custom
+************/
+
+.timeline {
+  margin: 65px auto 0px auto;
+  width: 75%;
+}
+
+.timeline__table {
+  border-left: 2px solid $dark;
+  width: 100%;
+}
+
+.table__fields {
+  th {
+    background-color: $dark;
+    color: $primary;
+    font-family: "HelveticaNeue";
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+.table__row {
+  color: $text;
+  font-family: "HelveticaNeue-Light";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.incident {
+  margin: 60px auto 0px auto;
+  width: 700px;
+}
+
+.column_one {
+  display: inline-block;
+  width: 50%;
+}
+
+/***************
+* Data Tables
+**************/
+
+.dataTables_length {
+  display: none;
+}
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+  font-weight: normal;
+}
+
+.dataTables_filter {
+  margin-bottom: 10px;
+}
+
+table.dataTable.no-footer {
+  border-bottom: 2px solid $dark;
+}
+
+table.dataTable tbody tr:hover,
+table.dataTable tbody tr.even {
+  background-color: #eceff0;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+  input {
+    border: none;
+    border-bottom: 2px solid $dark;
+    background-color: $primary;
+    font-size: 14px;
+    width: 200px;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $secondary;
+    }
+  }
+}

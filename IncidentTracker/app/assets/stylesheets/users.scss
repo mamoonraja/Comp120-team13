@@ -1,0 +1,49 @@
+.registration {
+  margin: 40px 30% 0 30%;
+  width: 40%;
+}
+
+.registration__column {
+  display: inline-block;
+}
+
+.right { float: right; }
+
+.field { margin: 30px 0 0 0; }
+
+.actions {
+  margin: 35px auto;
+  width: 100px;
+}
+
+#user_role{
+  color: $text;
+  font-size: 14px;
+  height: 40px;
+  margin-top: 25px;
+  width: 200px;
+}
+
+input[type=submit] {
+  background-color: $primary;
+  border: 2px solid $secondary;
+  border-radius: 3px;
+  color: $secondary;
+  font-family: 'GandhiSans-Bold';
+  font-size: 14px;
+  padding: 5px 15px 3px 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary;
+    color: $primary;
+  }
+}
+
+.login {
+  margin: 45px auto;
+  width: 200px;
+}
+
+.info__text { font-size: 12px; }
+
+.department { display: none; }

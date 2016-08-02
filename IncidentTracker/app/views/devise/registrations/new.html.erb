@@ -1,0 +1,51 @@
+<div class="registration">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="registration__column left">
+      <div class="field">
+        <%= f.label :first_name %><br />
+        <%= f.text_field :first_name, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :last_name %><br />
+        <%= f.text_field :last_name, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :role %><br />
+        <%= f.select "role", "<option>Student</option><option>Faculty</option>".html_safe, :class=>'role__select js-role' %>
+      </div>
+
+      <div class="field department">
+        <%= f.label :department %><br />
+        <%= f.collection_select :department_ids, Department.all, :id, :name, :class=>'role__select' %>
+      </div>
+    </div>
+
+    <div class="registration__column right">
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @validatable %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+  <% end %>
+</div>

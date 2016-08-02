@@ -1,0 +1,26 @@
+<div class="auth__links">
+  <% if user_signed_in? %>
+    <%= link_to 'Sign Out', destroy_user_session_path, :class => 'auth__link' %>
+    <%= link_to 'Account', edit_user_registration_path, :class => 'auth__link' %>
+  <% else %>
+    <%= link_to "Log In", new_user_session_path, :class=>'info__text', :class => 'auth__link' %>
+    <%= link_to "Sign Up", new_user_registration_path, :class=>'info__text', :class => 'auth__link' %>
+  <% end %>
+</div>
+
+<div class="header">
+  <div class="logo">
+    <a href="/">
+      <%= image_tag 'shield-outline.svg', class:"logo__icn" %>
+      <h1 class="logo__title">Trackr</h1>
+    </a>
+  </div>
+  <ul class="navigation">
+    <li class="nav__link text"><a href="#">Emergencies</a></li>
+    <li class="nav__link text"><a href="#">Support</a></li>
+    <li class="nav__link text"><a href="/documentation">API</a></li>
+    <li class="nav__link">
+      <%= link_to 'File New Incident', new_incident_path, :class => "incident__new-btn" %>
+    </li>
+  </ul>
+</div>
