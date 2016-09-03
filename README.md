@@ -67,7 +67,7 @@ We have additionally added the datatables plugin for simple pagination on our in
 
 
 ### Other Notes
-We added the test and development frameworks/databases and various design changes based on the feedback we have recieved
+We added the test and development frameworks/databases and various design changes based on the feedback we have recieved. And the reports for rest of the legs are added to docs.
 
 
     
